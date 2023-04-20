@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  font-family: "Brush Script MT", Helvetica, Arial, sans-serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+
+.logo_bar {
+  display: flex;
+  background-color: white;
+  padding-left: 5%;
+
+}
+
+.logo {
+  width: 10%;
+  height: auto;
+}
+
+.bg-image {
+  background-image: url("./images/coffee-beans-with-props-making-coffee.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.main_headline {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100vh;
+  padding: 2%;
+  justify-content: center;
+  /* text-align: justify; */
+}
+
+.main_headline h1 {
+  color: white;
+}
+
+.main_headline h2 {
+  color: white;
+}
+
+.main_headline h3 {
+  color: white;
+}
+
+.form_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 12%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: chocolate;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+.call_now {
+  display: none;
+  background-color: chocolate;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* main part 2 */
+
+.main_2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 8%;
+  margin-top: 35px;
+  color: rgb(65, 55, 55);
+}
+
+.main_2 h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+.main_2 h3 {
+  margin-top: 5px;
+}
+
+.boxs {
+  display: flex;
+  flex: 1;
+  padding-right: 5%;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+
+}
+
+.fa {
+  display: flex;
+  font-size: 5em;
+}
+
+/* main part 3 */
+
+.bg-image_2 {
+  background-image: url("./images/closeup-shot-roasted-coffee-beans.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* height: 50vh; */
+}
+
+.main_3 {
+  color: white;
+  text-align: center;
+}
+
+.mr_bean {
+  width: 150px;
+  height: 150px;
+  border: solid grey 1px;
+  border-radius: 50%;
+}
+
+.main_contain3 {
+  padding: 8%;
+}
+
+p.line {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
+.footer {
+  font-size: 1em;
+  text-align: center;
+}
+
+.a_foot {
+  text-decoration: none;
+  color: #0062cc;
+}
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+
+  .main {
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+  }
+
+  .main_2 {
+    flex-direction: column;
+    padding: 8%;
+  }
+
+
+
+  .logo_bar {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main_headline {
+    justify-content: flex-start;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: initial;
+    height: initial;
+    padding: 2%;
+  }
+
+  .main_headline h3 {
+    text-align: justify;
+  }
+
+  .form_box {
+    margin: 7%;
+  }
+
+  .call_now {
+    justify-content: center;
+    display: flex;
+    background-color: chocolate;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10%;
+  }
+
+  .bg-image {
+    height: auto;
+  }
+
+  .footer {
+    font-size: 0.65em;
+  }
+
+
+}
